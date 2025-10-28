@@ -1,0 +1,40 @@
+:root {
+    /* Colors */
+    --color-white: #fff;
+    --color-primary: #A71E22;
+    --color-primary-dark: #460B0D;
+    --color-primary-darker: #2B0507;
+    --color-primary-light: #E63E43;
+    
+    /* Backgrounds */
+    --bg-dark: #202020;
+    --bg-darker: #131212;
+    --bg-transparent: rgba(20, 20, 20, 0.2);
+    
+    /* Fonts */
+    --font-primary: "Inter", sans-serif;
+    --font-heading: "Bebas Neue", sans-serif;
+    
+    /* Effects */
+    --blur-standard: blur(8px);
+    --transition-standard: all 0.3s ease;
+    --border-light: 1px solid rgba(255, 255, 255, 0.1);
+    --glow-primary: 0 0 20px rgba(167, 30, 34, 0.4),
+                    0 0 40px rgba(167, 30, 34, 0.3);
+    
+    /* Z-index */
+    --z-header: 100;
+    --z-sidebar: 101;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(
+        135deg,
+        var(--color-primary-darker) 0%,
+        var(--color-primary-dark) 20%,
+        var(--color-primary) 40%,
+        var(--color-primary-light) 50%,
+        var(--color-primary) 60%,
+        var(--color-primary-dark) 80%,
+        var(--color-primary-darker) 100%
+    );
+}

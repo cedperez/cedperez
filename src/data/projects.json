@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Project One",
+        "description": "A brief description of Project One.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "image": "images/project-one.jpg",
+        "link": "https://example.com/project-one"
+    },
+    {
+        "id": 2,
+        "title": "Project Two",
+        "description": "A brief description of Project Two.",
+        "technologies": ["React", "Node.js"],
+        "image": "images/project-two.jpg",
+        "link": "https://example.com/project-two"
+    },
+    {
+        "id": 3,
+        "title": "Project Three",
+        "description": "A brief description of Project Three.",
+        "technologies": ["Python", "Flask"],
+        "image": "images/project-three.jpg",
+        "link": "https://example.com/project-three"
+    }
+]

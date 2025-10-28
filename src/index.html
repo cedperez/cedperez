@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A professional portfolio showcasing projects and skills.">
+    <title>CEDPEREZ - UI/UX DESIGNER BASED IN EDMONTON AB.</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <script src="js/main.js" defer></script>
+
+     <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header Partial -->
+    <div id="header"></div>
+    
+    <!-- Sidebar Partial -->
+    <div id="sidebar"></div>
+
+    <main>
+        <section id="hero">
+            <h1><span>UI/UX Designer</span> <span class="years">7+ years</span> <span> of High-Performance Digital Craftmanship.</span></h1>
+            
+        </section>
+        <section id="projects">
+            <h1>My Projects</h1>
+            <!-- Project content will be dynamically loaded here -->
+        </section>
+        <section id="about">
+            <h1>About Me</h1>
+            <!-- About content will be dynamically loaded here -->
+        </section>
+    </main>
+
+    <!-- Footer Partial -->
+    <div id="footer"></div>
+
+    <script>
+        // Load partials
+        const partials = ['header', 'footer', 'sidebar'];
+        
+        partials.forEach(partial => {
+            fetch(`_partials/${partial}.html`)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(partial).innerHTML = data;
+                });
+        });
+    </script>
+<script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-database.js"></script>
+</body>
+</html>

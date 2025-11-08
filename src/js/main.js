@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function loadProjects() {
-    fetch('../data/projects.json')
+    fetch('../data/projects.json') 
         .then(response => response.json())
         .then(data => {
             console.log('projects loaded:', data.length || Object.keys(data).length);

@@ -7,6 +7,9 @@
     <title>CEDPEREZ - UI/UX DESIGNER BASED IN EDMONTON AB.</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/process.css">
     <script src="js/main.js" defer></script>
 
      <!-- FONTS -->
@@ -14,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+    <!-- GLIDER -->
+    
 </head>
 <body>
     <!-- Header Partial -->
@@ -24,17 +29,18 @@
 
     <main>
         <section id="hero">
-            <h1><span>UI/UX Designer</span> <span class="years">7+ years</span> <span> of High-Performance Digital Craftmanship.</span></h1>
-            
+            <h1>
+                <span>UI/UX Designer</span>
+                <span class="years">7+ years</span>
+                <span> of High-Performance Digital Craftmanship.</span>
+            </h1>
+            <a href="#about" class="hero-btn">Learn More</a>
         </section>
-        <section id="projects">
-            <h1>My Projects</h1>
-            <!-- Project content will be dynamically loaded here -->
-        </section>
-        <section id="about">
-            <h1>About Me</h1>
-            <!-- About content will be dynamically loaded here -->
-        </section>
+
+        <section id="about"></section>
+        <section id="skills"></section>
+        <section id="process"></section>
+        
     </main>
 
     <!-- Footer Partial -->
@@ -42,7 +48,7 @@
 
     <script>
         // Load partials
-        const partials = ['header', 'footer', 'sidebar'];
+        const partials = ['header', 'footer', 'sidebar', 'about', 'process', 'skills'];
         
         partials.forEach(partial => {
             fetch(`_partials/${partial}.html`)
@@ -52,8 +58,24 @@
                 });
         });
     </script>
-<script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-messaging.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-database.js"></script>
+    <script src="js/glider.js"></script>
+    <script src="js/skills.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6900579c3abcc41951043641/1j8klcerf';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 </html>

@@ -1,0 +1,22 @@
+/* About Section Styles */
+#about {
+    max-width: 100%;
+    margin: 0 auto;
+    color: #AAAAAA;
+    width: 100%;
+   /* z-index: 99999; */
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+#about h2 {
+    font-size: 5rem;
+    color: #fff;
+}
+.about-image,
+.about-desc {
+    max-width:50%;
+}

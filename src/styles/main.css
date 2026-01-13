@@ -554,6 +554,9 @@ a.footer-icon img {
 }
 
 @media screen and (max-width: 768px) {
+  #hero {
+    margin-top: -80px;
+  }
   #hero h1 .years {
     font-size: 6rem;
   }

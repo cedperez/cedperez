@@ -136,7 +136,7 @@ header nav ul li a:hover {
   bottom: 0;
   z-index: -1;
   pointer-events: none;
-  background: linear-gradient(to bottom, rgb(205 1 1 / 21%) 0%, rgba(20, 20, 20, 0.7) 70%, #191919 100%);
+  background: linear-gradient(to bottom, rgb(205 1 1 / 21%) 0%, rgba(20, 20, 20, 0.7) 70%, #1e1d1d 100%);
 }
 
 #hero h1 span {
@@ -508,13 +508,16 @@ main { overflow: hidden; }
     width: 50%;
     position: relative;
 }
-img.footer-cta-img {
-    width: 100%;
-    position: absolute;
-    max-width: 600px;
-    top: -50%;
-    bottom: 0;
+@media screen and (min-width: 769px) { 
+  img.footer-cta-img {
+      width: 100%;
+      position: absolute;
+      max-width: 600px;
+      top: -50%;
+      bottom: 0;
+  }
 }
+
 .footer-cta-right {
     width: 50%;
     position: relative;
@@ -580,7 +583,7 @@ a.footer-icon img {
     padding: 2rem 2.5rem !important;
   }
     .footer-desc {
-        flex-flow: column;
+        flex-flow: column-reverse;
         text-align: center;
         padding: 2rem 1rem;
     }
@@ -588,6 +591,10 @@ a.footer-icon img {
         width: 100%;
         position: relative;
     }
+    .footer-cta-right {
+    margin-bottom: 0;
+    margin-top: -8rem;
+}
     .footer-cta-left img {
         position: relative;
         top: 0;
@@ -599,5 +606,8 @@ a.footer-icon img {
     .footer-content {
         flex-direction: column;
         gap: 1rem;
+    }
+    .footer-copy {
+     text-align: center;
     }
 }
